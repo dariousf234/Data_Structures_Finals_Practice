@@ -1,7 +1,7 @@
 
     //Set max # of books to 5; start with 0 books borrowed.
     MAX_BOOKS = 5
-    borrowedBooks = the MAX_BOOKS
+    [borrowedBooks] = array with the capacity MAX_BOOKS
 	count starts at 0 
 
 
