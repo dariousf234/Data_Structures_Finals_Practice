@@ -11,7 +11,8 @@
             return "Borrowing limit reached"
 		end if	
 
-        borrowedBooks[count] + book
+        //storing book in borrowedBooks at position [count]
+        borrowedBooks[count] <- book   
         count = count + 1
 		
 	End borrowBook(book) Procedure
@@ -19,7 +20,7 @@
 
     Begin returnBook(book) Procedure
 	
-        if count = 0 then 
+        if borrowedBooks[count] = 0 then 
             return ("No books to return.");
         end if
       
